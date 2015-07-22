@@ -1,0 +1,10 @@
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\bin\Debug\Markets.Data.dll.config
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\bin\Debug\Markets.Data.dll
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\bin\Debug\Markets.Data.pdb
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\bin\Debug\EntityFramework.dll
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\bin\Debug\Markets.Model.dll
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\bin\Debug\Markets.Model.pdb
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\bin\Debug\EntityFramework.xml
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\obj\Debug\Markets.Data.csprojResolveAssemblyReference.cache
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\obj\Debug\Markets.Data.dll
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.Data\obj\Debug\Markets.Data.pdb
