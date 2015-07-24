@@ -1,0 +1,16 @@
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\bin\Debug\DB-Mapping.exe.config
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\bin\Debug\DB-Mapping.exe
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\bin\Debug\DB-Mapping.pdb
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\bin\Debug\EntityFramework.dll
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\bin\Debug\EntityFramework.xml
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\obj\Debug\DB-Mapping.csprojResolveAssemblyReference.cache
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\obj\Debug\DB-Mapping.exe
+C:\Users\Ragnar\Desktop\Teamwork-XML\DB-Mapping\obj\Debug\DB-Mapping.pdb
+C:\Users\Ragnar\Desktop\SupermarketsChain-XML\DB-Mapping\bin\Debug\DB-Mapping.exe.config
+C:\Users\Ragnar\Desktop\SupermarketsChain-XML\DB-Mapping\obj\Debug\DB-Mapping.exe
+C:\Users\Ragnar\Desktop\SupermarketsChain-XML\DB-Mapping\obj\Debug\DB-Mapping.pdb
+D:\Project\IvanVanelov\ImportExportXML\DB-Mapping\bin\Debug\DB-Mapping.exe.config
+D:\Project\IvanVanelov\ImportExportXML\DB-Mapping\obj\Debug\DB-Mapping.exe
+D:\Project\IvanVanelov\ImportExportXML\DB-Mapping\obj\Debug\DB-Mapping.pdb
