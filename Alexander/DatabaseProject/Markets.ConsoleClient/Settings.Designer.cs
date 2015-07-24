@@ -34,5 +34,8 @@ namespace Markets.ConsoleClient {
                 this["OracleConnectionString"] = value;
             }
         }
+
+       
+
     }
 }

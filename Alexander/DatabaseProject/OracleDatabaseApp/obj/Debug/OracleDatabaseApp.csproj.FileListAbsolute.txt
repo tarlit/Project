@@ -5,3 +5,6 @@ E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\
 E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\bin\Debug\EntityFramework.xml
 E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.exe
 E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.pdb
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\OracleDatabaseApp\bin\Debug\OracleDatabaseApp.exe.config
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.exe
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.pdb

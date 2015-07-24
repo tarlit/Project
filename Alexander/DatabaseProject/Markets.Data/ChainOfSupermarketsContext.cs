@@ -16,5 +16,8 @@ namespace Markets.Data
         public IDbSet<Vendor> Vendors { get; set; }
         public IDbSet<Measure> Measures { get; set; }
         public IDbSet<Product> Products { get; set; }
+        public IDbSet<Location> Locations { get; set; }
+        public IDbSet<Expense> Expenses { get; set; }
+        public IDbSet<Sale> Sales { get; set; }
     }
 }

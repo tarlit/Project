@@ -10,3 +10,6 @@ E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.ConsoleCli
 E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.ConsoleClient\obj\Debug\Markets.ConsoleClient.csprojResolveAssemblyReference.cache
 E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.ConsoleClient\obj\Debug\Markets.ConsoleClient.exe
 E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\Markets.ConsoleClient\obj\Debug\Markets.ConsoleClient.pdb
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\Markets.ConsoleClient\bin\Debug\Markets.ConsoleClient.exe.config
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\Markets.ConsoleClient\obj\Debug\Markets.ConsoleClient.exe
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\Markets.ConsoleClient\obj\Debug\Markets.ConsoleClient.pdb
