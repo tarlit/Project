@@ -1,0 +1,10 @@
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\bin\Debug\OracleDatabaseApp.exe.config
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\bin\Debug\OracleDatabaseApp.exe
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\bin\Debug\OracleDatabaseApp.pdb
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\bin\Debug\EntityFramework.dll
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\bin\Debug\EntityFramework.xml
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.exe
+E:\SoftUni-train\Projects\DatabaseApplication\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.pdb
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\OracleDatabaseApp\bin\Debug\OracleDatabaseApp.exe.config
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.exe
+D:\VS PROJECTS\TEAM_PROJECT\DatabaseProject\OracleDatabaseApp\obj\Debug\OracleDatabaseApp.pdb
