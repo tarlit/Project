@@ -11,8 +11,9 @@
         public static void Main()
         {
             var sqlServerContext = new ChainOfSupermarketsContext();
+            var mysqlDatabase = new MySQLDatabase(sqlServerContext);
 
-            MySQLDatabase.MigrateToMySql(sqlServerContext);
+            mysqlDatabase.Migrate();
         }
     }
 }

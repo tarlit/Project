@@ -7,30 +7,33 @@
     using MySql.Data.MySqlClient;
     using Markets.Data;
 
-    public static class MySQLDatabase
+    public class MySQLDatabase
     {
         private const string CONNECTION_STRING = "Server=localhost;Port=3306;Uid=root;Pwd=123456;";
+        private const string MYSQL_DATABASE_SCHEMA_FILE = "../../../mysql_schema.sql";
         
-        private static MySqlConnection mysqlConnection;
+        private MySqlConnection mysqlConnection;
+        private ChainOfSupermarketsContext sqlServerContext;
 
-        private static ChainOfSupermarketsContext SQLServerContext;
-
-        public static void MigrateToMySql(ChainOfSupermarketsContext sqlServerContext)
+        public MySQLDatabase(ChainOfSupermarketsContext context)
         {
-            mysqlConnection = new MySqlConnection(CONNECTION_STRING);
-            SQLServerContext = sqlServerContext;
-
-            CreateDbSchema();
-            ImportDataFromSqlServer();
+            this.mysqlConnection = new MySqlConnection(CONNECTION_STRING);
+            this.sqlServerContext = context;
         }
 
-        private static void CreateDbSchema()
+        public void Migrate()
         {
-            var queries = File.ReadAllText("../../../mysql_schema.sql");
+            this.CreateDbSchema();
+            this.ImportDataFromSqlServer();
+        }
 
-            mysqlConnection.Open();
+        private void CreateDbSchema()
+        {
+            var queries = File.ReadAllText(MYSQL_DATABASE_SCHEMA_FILE);
 
-            using (mysqlConnection)
+            this.mysqlConnection.Open();
+
+            using (this.mysqlConnection)
             {
                 using (var command = new MySqlCommand(queries, mysqlConnection))
                 {
@@ -39,50 +42,52 @@
             }
         }
 
-        private static void ImportDataFromSqlServer()
+        private void ImportDataFromSqlServer()
         {
-            mysqlConnection.Open();
+            this.mysqlConnection.Open();
 
-            using (mysqlConnection)
+            using (this.mysqlConnection)
             {
-                using (var sqlServerDb = SQLServerContext)
+                using (var sqlServerDb = this.sqlServerContext)
                 {
-                    ImportVendors();
-                    ImportMeasures();
-                    ImportProducts();
+                    this.ImportVendors();
+                    this.ImportMeasures();
+                    this.ImportProducts();
                 }
             }
         }
 
-        private static void ImportVendors()
+        private void ImportVendors()
         {
-            var vendorNames = SQLServerContext.Vendors.Select(v => "('" + v.VendorName + "')");
+            var vendorNames = this.sqlServerContext.Vendors.Select(v => "('" + v.VendorName + "')");
             var query = string.Format(
-                "USE `chain_of_supermarkets`; INSERT IGNORE INTO `vendors` (`name`) VALUES {0};",
+                @"USE `chain_of_supermarkets`;
+                INSERT IGNORE INTO `vendors` (`name`) VALUES {0};",
                 string.Join(",", vendorNames));
 
-            using (var command = new MySqlCommand(query, mysqlConnection))
+            using (var command = new MySqlCommand(query, this.mysqlConnection))
             {
                 command.ExecuteNonQuery();
             }
         }
 
-        private static void ImportMeasures()
+        private void ImportMeasures()
         {
-            var measureNames = SQLServerContext.Measures.Select(m => "('" + m.MeasureName + "')");
+            var measureNames = this.sqlServerContext.Measures.Select(m => "('" + m.MeasureName + "')");
             var query = string.Format(
-                "USE `chain_of_supermarkets`; INSERT IGNORE INTO `measures` (`name`) VALUES {0};",
+                @"USE `chain_of_supermarkets`;
+                INSERT IGNORE INTO `measures` (`name`) VALUES {0};",
                 string.Join(",", measureNames));
 
-            using (var command = new MySqlCommand(query, mysqlConnection))
+            using (var command = new MySqlCommand(query, this.mysqlConnection))
             {
                 command.ExecuteNonQuery();
             }
         }
 
-        private static void ImportProducts()
+        private void ImportProducts()
         {
-            var products = SQLServerContext.Products.Select(p => new
+            var products = this.sqlServerContext.Products.Select(p => new
             {
                 p.ProductName,
                 p.Price,
@@ -96,34 +101,42 @@
                 int measureId = GetMeasureId(product.MeasureName);
 
                 var query = string.Format(
-                    "USE `chain_of_supermarkets`; INSERT INTO `products` (`name`, `price`, `vendor_id`, `measure_id`) VALUES('{0}', {1}, {2}, {3});",
+                    @"USE `chain_of_supermarkets`;
+                    INSERT INTO `products` (`name`, `price`, `vendor_id`, `measure_id`)
+                    VALUES('{0}', {1}, {2}, {3});",
                     product.ProductName,
                     product.Price,
                     vendorId,
                     measureId);
 
-                using (var command = new MySqlCommand(query, mysqlConnection))
+                using (var command = new MySqlCommand(query, this.mysqlConnection))
                 {
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-        private static int GetVendorId(string vendorName)
+        private int GetVendorId(string vendorName)
         {
-            var query = string.Format("USE `chain_of_supermarkets`; SELECT `id` FROM `vendors` WHERE `name`='{0}'", vendorName);
+            var query = string.Format(
+                @"USE `chain_of_supermarkets`;
+                SELECT `id` FROM `vendors` WHERE `name`='{0}'",
+                vendorName);
 
-            using (var command = new MySqlCommand(query, mysqlConnection))
+            using (var command = new MySqlCommand(query, this.mysqlConnection))
             {
                 return (int)command.ExecuteScalar();
             }
         }
 
-        private static int GetMeasureId(string measureName)
+        private int GetMeasureId(string measureName)
         {
-            var query = string.Format("USE `chain_of_supermarkets`; SELECT `id` FROM `measures` WHERE `name`='{0}'", measureName);
+            var query = string.Format(
+                @"USE `chain_of_supermarkets`;
+                SELECT `id` FROM `measures` WHERE `name`='{0}'",
+                measureName);
 
-            using (var command = new MySqlCommand(query, mysqlConnection))
+            using (var command = new MySqlCommand(query, this.mysqlConnection))
             {
                 return (int)command.ExecuteScalar();
             }
