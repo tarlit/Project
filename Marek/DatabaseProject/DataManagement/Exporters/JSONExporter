@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Markets.Data;
+using Markets.Model;
+
+namespace DataManagement.Exporters
+{
+    public class JSONExporter
+    {
+        public IList<ProductTotalSale> ProductSalesForPeriod(DateTime startDate, DateTime endDate)
+        {
+            var db = new ChainOfSupermarketsContext();
+
+            var salesForPeriod = db.Sale
+                    .Where(s => s.Date >= startDate && s.Date <= endDate)
+                    .GroupBy(s => s.ProductId)
+                    .Select(s => new ProductTotalSale
+                    {
+                        ProductId = s.ProductId,
+                        ProductName = s.Product.ProductName,
+                        VendorName = s.Product.Vendor,
+                        QuantitySold = s.Quantity,
+                        TotalIncomes = s.Quantity * s.PricePerUnit
+                    })
+                    .ToList();
+
+            return salesForPeriod;
+        }
+
+        //TODO 
+    }
+}
