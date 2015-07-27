@@ -3,7 +3,6 @@ C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\M
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\Markets.Model.pdb
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\EntityFramework.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\MongoDB.Bson.dll
-C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\MongoDB.Driver.Core.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\MongoDB.Driver.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Model\bin\Debug\EntityFramework.xml

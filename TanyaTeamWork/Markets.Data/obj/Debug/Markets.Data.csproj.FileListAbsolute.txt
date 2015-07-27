@@ -4,7 +4,6 @@ C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\Ma
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\EntityFramework.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\Markets.Model.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\MongoDB.Bson.dll
-C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\MongoDB.Driver.Core.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\MongoDB.Driver.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.Data\bin\Debug\Markets.Model.pdb

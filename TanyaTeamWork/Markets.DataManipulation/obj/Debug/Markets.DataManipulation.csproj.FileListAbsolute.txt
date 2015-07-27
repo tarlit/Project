@@ -12,3 +12,7 @@ C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\obj\Debug\Markets.DataManipulation.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\obj\Debug\Markets.DataManipulation.dll
 C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\obj\Debug\Markets.DataManipulation.pdb
+C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\bin\Debug\MongoDB.Bson.dll
+C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\bin\Debug\MongoDB.Driver.dll
+C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\bin\Debug\MongoDB.Bson.xml
+C:\Users\Admin\Desktop\TeamWork Beladona\TanyaTeamWork\Markets.DataManipulation\bin\Debug\MongoDB.Driver.xml

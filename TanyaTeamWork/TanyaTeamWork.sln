@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markets.Data", "Markets.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markets.ConsoleClient", "Markets.ConsoleClient\Markets.ConsoleClient.csproj", "{23347801-3D28-4F7A-A370-F00D7F7E5A75}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{99234AE7-1F18-4A25-92B5-7BC136C794D5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Json-Reports", "Json-Reports", "{64FB7C57-CA1E-4E5D-B116-95BA1CA85490}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markets.DataManipulation", "Markets.DataManipulation\Markets.DataManipulation.csproj", "{FED7C794-68F6-490E-ADAD-2A902E4B368F}"
 EndProject
 Global
@@ -40,8 +36,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{64FB7C57-CA1E-4E5D-B116-95BA1CA85490} = {99234AE7-1F18-4A25-92B5-7BC136C794D5}
 	EndGlobalSection
 EndGlobal
